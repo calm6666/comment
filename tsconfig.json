@@ -1,0 +1,6 @@
+{
+  "extends": "@hili/tsconfig/lit.json",
+  "include": [
+    "src"
+  ]
+}

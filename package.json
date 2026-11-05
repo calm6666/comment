@@ -1,0 +1,33 @@
+{
+  "name": "@hili/comment",
+  "version": "0.0.1",
+  "private": false,
+  "description": "Lit Element 评论 Web Component（三端通用）",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts --clean",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@hili/tsconfig": "workspace:*",
+    "@hili/eslint-config": "workspace:*",
+    "vite": "^8.0.0"
+  },
+  "dependencies": {
+    "lit": "^3.2.1"
+  }
+}
